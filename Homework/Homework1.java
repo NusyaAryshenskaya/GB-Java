@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Homework01 {
+public class Homework01.java {
     public static void main(String[] args) {
 
         // 1. Выбросить случайное целое число в диапазоне от 0 до 2000 и сохранить в i
