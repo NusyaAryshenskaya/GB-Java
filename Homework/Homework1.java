@@ -35,23 +35,23 @@ public class Homework1 {
     static short[] get_arraym1(int n, int i){
         int n0 = ((i - 1) / n + 1) * n;
         int n1 = (Short.MAX_VALUE / n) * n;
-        short[] arr = new short[(n1 - n0) / n + 1];
+        short[] array = new short[(n1 - n0) / n + 1];
         for (int l = n0; l <= n1; l += n) {
-            arr[(l - n0) / n] = (short) l;
+            array[(l - n0) / n] = (short) l;
         }
-        return arr;
+        return array;
     }
 
     static short[] get_arraym2(int n, int i){
         int k = (i  / n ) + (Short.MIN_VALUE / n ) * (-1) + 1;
-        short[] arr = new short[i - Short.MIN_VALUE + 1 - k];
+        short[] array = new short[i - Short.MIN_VALUE + 1 - k];
         int m = 0;
         for (int l = Short.MIN_VALUE; l <= i; l++) {
             if (l % n != 0) {
-                arr[m] = (short) l;
+                array[m] = (short) l;
                 m++;
             }
         }
-        return arr;
+        return array;
     }
 }
